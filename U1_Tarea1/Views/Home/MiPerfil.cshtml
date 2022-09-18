@@ -1,0 +1,22 @@
+﻿@model U1_Tarea1.Models.Alumno
+
+<html>
+    <head>
+        <title>Perfil de @Model.Nombre</title>
+        <link rel="stylesheet" href="~/StyleSheet.css" />
+    </head>
+    <body>
+        <div class="div-principal">
+        <div class="contenedor">
+            <img src="~/fotoPerfil.jpg" />
+            <div class="datos">
+                <h2>Nombre del alumno: @Model.Nombre</h2>
+                <h3>Materia: @Model.NombreMateria</h3>
+                <h3>Semestre en curso: @Model.Semestre</h3>
+                <h3>Periodo actual: @Model.Periodo</h3>
+            </div>
+        </div>
+        </div>
+       
+    </body>
+</html>

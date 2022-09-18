@@ -1,0 +1,45 @@
+﻿body {
+    background-color: #cfbede;
+    font-family: 'Century Gothic';
+    margin: 15px;
+}
+.form {
+    background-color: #a6d1d7;
+    padding: 15px;
+    border-radius: 5px;
+    width: max-content;
+    box-shadow: #9281ba 0px 0px 10px;
+}
+
+input{
+    width: 250px;
+}
+input[type=submit]{
+    height: 40px;
+    border-width: 0;
+}
+
+.div-principal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #a6d1d7;
+    border-radius: 5px;
+    box-shadow: #9281ba 0px 0px 10px;
+}
+.datos{
+    padding: 50px 50px 50px 25px;
+}
+
+img {
+    width: 400px;
+    padding: 50px 25px 50px 50px;
+    border-radius: 5px;
+}
