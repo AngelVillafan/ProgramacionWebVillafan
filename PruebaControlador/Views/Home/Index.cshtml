@@ -1,0 +1,24 @@
+﻿<html>
+<head>
+    <title>Mi Sitio Web</title>
+    <link href="~/Assets/Styles/Styles.css" rel="stylesheet"/>
+</head>
+
+<body>
+    <h1>Titulo de la pagina</h1>
+    <h2>Son las @DateTime.Now.ToShortDateString()</h2>
+
+    <ol>
+        @for (int i = 1;i <=10; i++)
+        {
+            <li>Alumno @(i+1)</li>
+        }
+    </ol>
+    <p>
+        <a href="~/Home/Pagina2">Ir a la segunda pagina</a>
+    </p>
+
+</body>
+
+
+</html>

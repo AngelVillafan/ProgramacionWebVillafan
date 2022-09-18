@@ -1,0 +1,52 @@
+﻿@*Se actualizan los nombres de las variables en la barra de direccion*@
+<html>
+    <head>
+<tittle>Mi Perfil</tittle>
+
+    </head>
+    <body>
+    <br />
+    <br />
+        <h1>Mi Perfil</h1>
+
+    <br />
+    <br />
+<form action="~/Perfil/Datos">
+    <label>Nombre:</label>
+    <input name="Nombre" type="text"/>
+    <br />
+    <br />
+
+        <label>Carrera:</label>
+        <select name="Carrera">
+            <option disabled selected></option>
+            <option>Ing. Sistemas Computacionales</option>
+            <option>Ing. Administracion</option>
+            <option>Ing. Petrolera</option>
+        </select>
+
+        <br />
+        <br />
+
+        <label>Semestre:</label>
+        <input name="Semestre" type="number" min="1" max="9"/>
+
+        <br />
+        <br />
+
+        <label>Fecha nacimiento:</label>
+        <input name="FechaNacimiento" type="date" />
+
+        <br />
+        <br />
+        <input  type="submit" value="Enviar Datos"/>
+
+
+
+
+</form>
+
+
+    </body>
+
+</html>

@@ -1,0 +1,28 @@
+﻿@model PruebaControlador.Models.PerfilViewModel
+
+<html>
+    <head>
+        <title>Datos del perfil</title>
+    </head>
+    <body>
+<h1>Datos del perfil</h1>
+
+<dl>
+    <dt>Nombre:</dt>
+    <dd>@Model.Nombre</dd>
+
+        <dt>Carrera:</dt>
+        <dd>@Model.Carrera</dd>
+
+        <dt>Semestre:</dt>
+        <dd>@Model.Semestre</dd>
+
+        <dt>Fecha de nacimiento:</dt>
+        <dd>@Model.FechaNacimiento.ToShortDateString()</dd>
+
+
+
+</dl>
+
+    </body>
+</html>
