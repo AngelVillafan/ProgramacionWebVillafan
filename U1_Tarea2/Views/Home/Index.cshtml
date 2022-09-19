@@ -1,0 +1,54 @@
+﻿@model U1_Tarea2.Models.Promedio
+
+<html>
+    <head>
+        <title>
+            Promedio
+        </title>
+        <link rel="stylesheet" href="~/StyleSheet.css"/>
+    </head>
+    <body>
+        <h1>Calculemos mi promedio</h1>
+        <h2>Ingresa las calificaciones de cada materia a continuación.</h2>
+        <form action="~/Home/Index">
+            <label>Materia 1: </label> <input name="Materia1" type="number" value="@Model.Materia1"/>
+            <br />
+            <br />
+        <label>Materia 2: </label> <input name="Materia2" type="number" value="@Model.Materia2"/>
+        <br />
+        <br />
+        <label>Materia 3: </label> <input name="Materia3" type="number" value="@Model.Materia3"/>
+        <br />
+        <br />
+        <input type="submit" value="Calcular promedio"/>
+        </form>
+
+        <div class="estado">
+            @if (Model.MediaAritmetica >= 70)
+        {
+            <h2>Pasaste, felicidades.</h2>
+            <h3>@Model.MediaAritmetica</h3>
+            <style>
+                .estado{
+                    background: #06c258;
+                    color: white;
+                    width: max-content;
+                }
+            </style>
+        }
+        @if (Model.MediaAritmetica < 70)
+        {
+            <h2>Lo siento, recursaste.</h2>
+            <h3>@Model.MediaAritmetica</h3>
+            <style>
+                .estado {
+                    background: #d80500;
+                    color: white;
+                    width: max-content;
+                }
+            </style>
+        }
+        </div>
+
+    </body>
+</html>
