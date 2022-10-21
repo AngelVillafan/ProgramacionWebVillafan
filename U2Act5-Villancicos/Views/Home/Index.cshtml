@@ -1,0 +1,17 @@
+﻿@model IEnumerable<U2Act5_Villancicos.Models.ViewModels.IndexViewModel>
+@{
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<ul>
+    @foreach (var villancico in Model)
+    {
+        <li>
+            <a href="~/home/villancico/@(villancico.Nombre.Replace(" ","_"))">@(villancico.Nombre)</a>
+            <p>@(villancico.Informacion)</p>
+        </li>
+    }
+   
+    
+</ul>
+

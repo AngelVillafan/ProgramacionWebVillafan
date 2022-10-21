@@ -1,0 +1,19 @@
+﻿@model U2Act5_Villancicos.Models.ViewModels.VillancicoViewModel
+@{
+    ViewData["Title"] = "Villancico";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<div class="menu">
+    <a href="~/home/villancico" class="active">Video</a>
+    <a href="~/home/villancicoletra">Letra</a>
+    <a href="~/home/index">Otros villancicos</a>
+</div>
+
+<div class="card">
+    <h2>@(Model.Nombre)</h2>
+    <h3>@(Model.Compositor), @(Model.Año)</h3>
+
+    <iframe width="560" height="315" src="@(Model.VideoUrl)" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+

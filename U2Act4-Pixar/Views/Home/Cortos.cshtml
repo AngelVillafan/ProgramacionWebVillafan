@@ -1,0 +1,29 @@
+﻿@model IEnumerable<U2Act4_Pixar.Models.Categoria>
+@{
+    ViewData["Title"] = "Cortos";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<div id="principalPeliculas">
+
+    <div id="pelis">
+
+        @foreach (var cat in Model)
+        {
+            <h1>@(cat.Nombre)</h1>
+            @foreach(var corto in cat.Cortometraje){
+                <div>
+                    <a class="imgPelicula" href="~/Cortos/@(corto.Nombre.Replace(" ","_"))" >
+                        <img src="~/images/portadas/@(corto.Id)_pc.jpg" alt="@(corto.Nombre)">
+                    </a>
+                    <div class="nombrePelicula">
+                        <p>@(corto.Nombre)</p>
+                    </div>
+                </div>
+            }  
+
+        }
+        
+       
+    </div>
+</div>
